@@ -1,0 +1,194 @@
+/* Style général */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/fond.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 189, 8);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(9, 22, 202, 0.7);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(247, 212, 15);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Galerie d'images */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.image img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Sections */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #FFC107;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+p{
+    color: aliceblue;
+
+}
+/*styles de la gallerie*/
+#nouvelle\ collection {
+    text-align: center;
+    padding: 20px;
+    background-color: none;
+}
+
+#nouvelle\ collection h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.galley {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.image h3, .image p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(16, 72, 145);
+}
+
+/* Effet de zoom et animation au survol*/
+.image:hover img{
+  transform: translateX(10px);
+  transform: translateX(-10px);
+  transform: translateX(50px);
+
+
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
